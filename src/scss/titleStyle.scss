@@ -1,0 +1,66 @@
+@import 'variables';
+
+.title{
+    margin-bottom: 25px;
+    @media (max-width: 768px){
+        margin-bottom: 32px;
+    }
+    &__main{
+        font-size: 45px;
+        line-height: 1.17;
+        font-weight: 600;
+        margin: 0;
+        @media (max-width: 1199px){
+            font-size: 42px;
+            line-height: 1.2;
+        }
+        @media (max-width: 1024px){
+            font-size: 40px;
+            line-height: 1.2;
+        }
+        @media (max-width: 768px){
+            text-align: center;
+            font-size: 38px;
+        }
+        @media (max-width: 576px){
+            font-size: 28px;
+            line-height: 1.14;
+        }
+        @media (max-width: 480px){
+            font-size: 28px;
+            line-height: 1.29;
+        }
+        &.title-white{
+            color: #FFF;
+        }
+    } 
+    &__sub{
+        // font-family: 'Roboto', sans-serif;
+        line-height: 1.17;
+        font-size: 48px;
+        color: $accent;
+        font-style: normal;
+        // font-weight: 300;
+        @media (max-width: 1199px){
+            font-size: 42px;
+            line-height: 1.2;
+        }
+        @media (max-width: 1024px){
+            font-size: 40px;
+            line-height: 1.2;
+        }
+        @media (max-width: 768px){
+            text-align: center;
+            font-size: 38px;
+        }
+        @media (max-width: 576px){
+            font-size: 28px;
+            line-height: 1.14;
+        }
+        @media (max-width: 480px){
+            font-size: 28px;
+            line-height: 1.29;
+        }
+    }
+    
+}

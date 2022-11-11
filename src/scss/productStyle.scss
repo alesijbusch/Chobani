@@ -1,0 +1,219 @@
+@import 'variables';
+
+.product-color--zero{
+    background-color: #594999;
+    
+} 
+
+.product-color--plantbased{
+    background-color: #ece8e1;
+}
+
+.product-color--greek{
+    background-color: #ece8e1;
+}
+
+.product-color--oatbased{
+    background-color: #fff;
+}
+
+.product-color--dairy{
+    background: #bdd3f2;
+}
+
+.product-color--chobanicoffee{
+    background: rgb(81, 54, 41);
+}
+
+.product-color--less{
+    background: rgb(244, 243, 240);
+}
+
+.product-color--probiotic{
+    background: rgb(238, 235, 230);
+}
+
+.product-color--probiotic{
+    background: rgb(238, 235, 230);
+}
+
+.product-color--probiotic{
+    background: rgb(238, 235, 230);
+}
+
+.product-color--batch{
+    background: rgb(238, 235, 230);
+}
+
+.product-color--rich{
+    background: rgb(236, 232, 225);
+}
+
+.product{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 64px 60px;
+    @media (max-width: 1199px){  
+        padding: 64px 30px 55px;
+    }
+    @media (max-width: 1024px){
+        padding: 64px 40px 55px;
+    } 
+    @media (max-width: 992px){
+        padding: 64px 40px 55px;
+    } 
+    @media (max-width: 768px){
+        padding: 64px 20px 55px;
+        background-position: center bottom;
+    }
+    @media (max-width: 576px){
+        padding: 32px 30px 48px;
+    }
+    @media (max-width: 480px){
+        padding: 24px 20px 48px;
+    }
+    // @media (max-width: 1024px){
+    //     padding: 64px 40px 55px;
+    // }
+    &.product-bg--zero{
+        background-image: url(../images/bg/product-bg1.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile1.webp);
+        }
+    }
+    &.product-bg--plantbased{
+        background-image: url(../images/bg/product-bg2.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile2.webp);
+        }
+    }
+    &.product-bg--greek{
+        background-image: url(../images/bg/product-bg3.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile3.webp);
+            background-position: center 40px;
+        }
+    }
+    &.product-bg--oatbased{
+        background-image: url(../images/bg/product-bg4.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile4.webp);
+        }
+    }
+    &.product-bg--dairy{
+        background-image: url(../images/bg/product-bg5.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile5.webp);
+        }
+    }
+    &.product-bg--chobanicoffee{
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile6.webp);
+        }
+    }
+    &.product-bg--less{
+        background-image: url(../images/bg/product-bg7.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile7.webp);
+        }
+    }
+    &.product-bg--probiotic{
+        background-image: url(../images/bg/product-bg12.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile12.webp);
+        }
+    }
+    &.product-bg--flip{
+        background-image: url(../images/bg/product-bg13.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile13.webp);
+        }
+    }
+    &.product-bg--batch{
+        background-image: url(../images/bg/product-bg14.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile14.webp);
+        }
+    }
+    &.product-bg--rich{
+        background-image: url(../images/bg/product-bg15.webp);
+        @media (max-width: 768px){
+            background-image: url(../images/bg/product-bg-mobile15.webp);
+            background-position: center top;
+        }
+    }
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1199px){
+            align-items: center;
+        }
+        @media (max-width: 768px){
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+    &-bottom{  
+        font-size: 11px;
+        line-height: 1;
+        letter-spacing: .2px;
+        margin-top: 70px;
+        width: 100%;
+        @media (max-width: 1199px){
+            margin-top: 64px;
+        }
+        @media (max-width: 1024px){
+            margin-top: 50px;
+        }
+        @media (max-width: 480px){
+            margin-top: 64px;
+        }
+    }
+    &-left{
+        flex-basis: 45%;
+        &__discription{
+            font-size: 14px;
+            line-height: 1.6;
+            letter-spacing: .2px;
+            margin-bottom: 65px;
+            @media (max-width: 1024px){
+                font-size: 14px;
+                line-height: 1.5;
+                letter-spacing: .2px;
+            }
+            @media (max-width: 768px){
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+        &__btn{
+            @media (max-width: 768px){
+                display: flex;
+                justify-content: center;    
+            }
+            
+        }
+        &__img{
+            display: none;
+            max-width: 100%;
+            @media (max-width: 768px){
+                display: block;
+                margin-bottom: 64px;
+            }
+            @media (max-width: 576px){
+                margin-bottom: 32px;
+            }
+        }
+        
+    }
+    &-right{
+        flex-basis: 52%;
+        &__img{
+            max-width: 100%;
+            @media (max-width: 768px){
+                display: none;
+            }
+        } 
+    }
+}

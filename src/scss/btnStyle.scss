@@ -1,0 +1,33 @@
+@import 'variables';
+
+.btn{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1; 
+    letter-spacing: .2px;
+    padding: 17px 24px;
+    border-radius: 2px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    white-space: nowrap;
+    transition: all .3s cubic-bezier(.215,.61,.355,1);
+    color: $accent;
+    text-decoration: none;
+    @media (max-width: 768px){
+        padding: 15px 24px; 
+    }
+    @media (max-width: 480px){
+        padding: 19px 24px;
+    }
+    &:hover{
+        opacity: .7;
+    }
+    &.btn-green{
+        background: $accent;
+        color: #fff;
+        &:hover{
+            transition: background-color 0.3s linear 0s;
+            background-color: rgb(57, 131, 114);
+        }
+    }
+}

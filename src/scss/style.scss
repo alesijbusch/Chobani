@@ -1,0 +1,52 @@
+@import 'variables';
+
+body{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    background-color: #f4f3f0; 
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    // @media (max-width: 576px){
+    //     padding-right: 15px;
+    //     padding-left: 15px;
+    // }
+    @media (min-width: 576px){
+        max-width: 540px;
+    } 
+    @media (min-width: 768px){
+        max-width: 720px;
+    }
+    @media (min-width: 992px){
+        max-width: 960px;
+    } 
+    @media (min-width: 1200px){
+        max-width: 1170px;
+    }
+    @media (min-width: 1480px){
+        max-width: 1376px;
+    }
+}
+
+.mb65{
+    margin-bottom: 65px;        
+    @media (max-width: 768px){
+        margin-bottom: 20px;
+    }
+}
+
+.white-color{
+    color: #fff;
+}
+.accent-color{
+    color: $accent;
+}
+
+
+
+
+
+
+
